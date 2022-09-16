@@ -1,5 +1,9 @@
 <app-header></app-header>
-<app-card
-  *ngFor="let user in users;"
-  [user]="user">
-</app-card>
+<div class="container overflow-hidden">
+  <div class="row gy-2">
+    <app-card
+      *ngFor="let user of users;"
+      [user]="user">
+    </app-card>
+  </div>
+</div>

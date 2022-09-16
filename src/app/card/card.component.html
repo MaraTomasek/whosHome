@@ -1,8 +1,19 @@
 <div class="card">
-  <div class="card-header">
-    {{user.name}} - {{user.isHome}}
-  </div>
   <div class="card-body">
-    sample text
+    <div class="card-header">
+      <div class="form-check form-switch">
+        <input [(ngModel)]="user.isHome"
+               class="form-check-input"
+               type="checkbox"
+               role="switch"
+               id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">
+          {{user.name}}
+        </label>
+      </div>
+    </div>
+    <div class="card-text">
+      sample
+    </div>
   </div>
 </div>

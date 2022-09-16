@@ -14,4 +14,8 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  logSwitch() {
+    console.log(`${this.user.name} is Home: ${this.user.isHome}`)
+  }
+
 }
