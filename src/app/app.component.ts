@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {User} from "./model/user.model";
 
 @Component({
@@ -16,6 +16,11 @@ export class AppComponent {
     let julia = new User("Julia");
 
     this.users = [mara, fani, julia];
+    // this.saveState();
   }
+
+  // saveState() {
+  //   this.stateService.saveState(this.users);
+  // }
 
 }
